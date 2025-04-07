@@ -1,0 +1,735 @@
+/* Importação da fonte Jura do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia Geral */
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Jura', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Tipografia para Títulos */
+h1, h2 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 300; /* Peso leve para o título */
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+    color: #333; /* Preto para o título da nova seção */
+}
+
+/* Tipografia para Parágrafos */
+p {
+    font-family: 'Jura', sans-serif;
+    font-weight: 400; /* Peso médio para o texto descritivo */
+    font-size: 24px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+/* Tipografia para Links (no menu) */
+a {
+    font-family: 'Jura', sans-serif;
+    font-weight: 500; /* Peso médio para links */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8B1E3F; /* Cor da logo para hover */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff; /* Faixa branca */
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Borda sutil */
+}
+
+.logo img {
+    width: 120px; /* Tamanho ajustado para corresponder à imagem */
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 24px; /* Tamanho dos ícones do Font Awesome */
+    color: #8B1E3F; /* Mesma cor da logo */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #a52a2a; /* Tom mais claro para hover */
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 20; /* Acima da imagem e outros elementos */
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: calc(100vh - 80px); /* Altura total menos a altura do header */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra a seção */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.hero-title {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text {
+    max-width: 500px;
+    align-self: flex-end;
+    text-align: left;
+}
+
+.wine-bottle {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    z-index: 3;
+}
+
+.wine-bottle img {
+    width: 250px; /* Tamanho ajustado para corresponder à imagem */
+}
+
+/* Features Section */
+.features {
+    background-color: #F5E9D7;
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;          /* Novo */
+    flex-direction: column; /* Novo */
+    align-items: center;    /* Novo */
+}
+
+.features-header {
+    margin-bottom: 40px;
+}
+
+.features-header p {
+    font-size:22px;
+    color: #333; /* Preto para o subtítulo */
+    margin-top: 10px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;           /* Novo: ocupa 100% do container */
+    margin: 0 auto;
+    padding: 0 20px;       /* Novo: espaçamento lateral */
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 25px;         /* Aumentei o padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 400px;     /* Altura mínima para uniformidade */
+    display: flex;         /* Novo */
+    flex-direction: column;/* Novo */
+    justify-content: space-between; /* Alinhamento vertical */
+}
+
+.feature-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #E5E5E5; /* Cinza claro como placeholder */
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Adicione isso */
+.feature-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    border-radius: 4px; /* Opcional: para combinar com o card */
+    margin-bottom: 15px;
+}
+
+
+/* Estilização da seção de vinhos */
+.wines-section {
+    background-color: #000; /* Fundo preto escuro */
+    color: #fff; /* Texto branco */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.wines-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título principal */
+.wines-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Descrição introdutória */
+.wines-container p.intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Estilização de cada item de vinho */
+.wine-item {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Título do vinho */
+.wine-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Preço do vinho */
+.wine-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+    color: #fff;
+}
+
+/* Descrição do vinho */
+.wine-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc; /* Texto um pouco mais claro para contraste */
+}
+
+/* Limpar o float do preço */
+.wine-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Estilização da seção de acompanhamentos */
+.accompaniments-section {
+    background-color: #fff; /* Fundo branco */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.accompaniments-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título principal */
+.accompaniments-container h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif; /* Fonte estilizada semelhante à da imagem */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Estilização de cada item de acompanhamento */
+.accompaniment-item {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Título do acompanhamento */
+.accompaniment-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Preço do acompanhamento */
+.accompaniment-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+    color: #333;
+}
+
+/* Descrição do acompanhamento */
+.accompaniment-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Vinho recomendado (entre parênteses) */
+.accompaniment-item p .wine-recommendation {
+    font-style: italic;
+    color: #999;
+}
+
+/* Limpar o float do preço */
+.accompaniment-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Estilização da seção */
+.cards-section {
+    background-image: url('/assets/imgs/agua.jpg'); /* Imagem de fundo placeholder */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    min-height: 100vh; /* Altura mínima para cobrir a tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/* Estilização do container dos cards */
+.cards-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilização de cada card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaço entre os cards */
+}
+
+/* Estilização do card com imagem */
+.card-with-image {
+    position: relative;
+}
+
+.card-with-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px; /* Metade da imagem para fora do card */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+}
+
+/* Estilização do texto do card */
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Nome no card com imagem */
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 40px; /* Espaço para a imagem */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Título do segundo card */
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilização do botão */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5e1c5; /* Cor do botão (bege claro) */
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #e6c8a0;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #1a1a1a; /* Fundo preto escuro */
+    color: #fff; /* Texto branco */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal do footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilização de cada coluna */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Estilização dos títulos das colunas */
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos links e parágrafos */
+.footer-column a,
+.footer-column p {
+    font-size: 0.9rem;
+    color: #ccc; /* Texto cinza claro */
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+/* Estilização dos links ao passar o mouse */
+.footer-column a:hover {
+    color: #fff;
+}
+
+/* Estilização do botão "Entre em contato" */
+.footer-column .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-column .btn:hover {
+    background-color: #ccc;
+    color: #1a1a1a;
+}
+
+/* Estilização dos ícones de contato */
+.footer-column .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-column .contact-info i {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .wine-bottle img {
+        width: 200px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav-icons .icon {
+        font-size: 20px;
+    }
+
+    .hero-content {
+        padding: 30px;
+    }
+
+    .features {
+        padding: 40px 30px;
+    }
+
+    .features-grid {
+        max-width: 900px;  /* Reduz o tamanho máximo */
+        gap: 25px;
+    }
+
+    .feature-card {
+        min-height: 350px;
+        padding: 20px;
+    }
+
+    .feature-image {
+        height: 180px;     /* Aumentei a altura da imagem */
+    }
+
+    .feature-image-placeholder {
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .wine-bottle img {
+        width: 150px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nav-icons .icon {
+        font-size: 18px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 400px;
+    }
+
+    .features {
+        padding: 40px 20px; /* Reduz padding da seção */
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;  /* Limita largura em telas menores */
+    }
+
+    .feature-card {
+        min-height: auto; /* Remove altura fixa */
+        padding: 20px;
+    }
+
+    .feature-image {
+        height: 200px;     /* Imagem maior em telas menores */
+    }
+
+    .wines-container h1 {
+        font-size: 2rem;
+    }
+
+    .wines-container p.intro {
+        font-size: 1rem;
+    }
+
+    .wine-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .wine-item .price {
+        font-size: 1rem;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .wine-item p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .card-with-image img {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .wine-bottle img {
+        width: 120px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .nav-icons .icon {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .hero-text {
+        max-width: 300px;
+    }
+
+    .features {
+        padding: 20px 15px;
+    }
+
+    .features {
+        padding: 30px 15px;
+    }
+
+    .feature-image {
+        height: 150px;
+    }
+}

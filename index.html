@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o mundo dos vinhos com Rossi Valle.">
+    <meta name="keywords" content="vinhos, degustação, Rossi Valle, tradição, modernidade">
+    <meta name="author" content="Rossi Valle Team">
+    <title>Rossi Valle - Vinhos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/imgs/Logo dourada.png" alt="Rossi Valle Logo">
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-shopping-cart icon"></i>
+            <i class="fas fa-bars icon menu-icon" onclick="toggleMenu()"></i>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vinhos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/imgs/banner.png" alt="Vinhedo Banner" class="hero-image">
+            <div class="hero-content">
+                <h1 class="hero-title">Uma jornada pelo mundo dos vinhos e suas histórias.</h1>
+                <p class="hero-text">Transforme sua experiência de degustação com nosso novo cardápio, onde vinhos clássicos encontram rótulos inovadores. Eleve seu paladar com sabores que misturam tradição e modernidade com perfeição.</p>
+            </div>
+            <div class="wine-bottle">
+                <img src="assets/imgs/vinhotinto.png" alt="Garrafa de Vinho">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="features-header">
+                <h2>Aprecie os sabores de nossa loja de vinhos.</h2>
+                <p>Delecie-se com cada gole, cada momento.</p>
+            </div>
+            <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-number">01</span>
+                        <img src="assets/imgs/vinho1.png" alt="Rótulos selecionados" class="feature-image">
+                        <p>Rótulos selecionados, cuidadosamente escolhidos para você.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-number">02</span>
+                        <img src="assets/imgs/Espulmante Gold.png" alt="Espaço encantador" class="feature-image">
+                        <p>Um espaço encantador para apreciar bons vinhos e boas companhias.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-number">03</span>
+                        <img src="assets/imgs/vinho3.png" alt="Seleções exclusivas" class="feature-image">
+                        <p>Seleções exclusivas que vão encantar seu paladar.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-number">04</span>
+                        <img src="assets/imgs/vinho4.png" alt="Paixão por vinhos" class="feature-image">
+                        <p>Experimente nossa paixão por vinhos e serviços excepcionais.</p>
+                    </div>
+
+            </div>
+        </section>
+
+        <!-- Adicione isto após a seção .features -->
+        <section class="wines-section">
+            <div class="wines-container">
+                <h1>Descubra nossos vinhos</h1>
+                <p class="intro">
+                    Explore nossa seleção de vinhos premium e acompanhamentos. Delicie-se com cada combinação!
+                </p>
+    
+                <div class="wine-item">
+                    <h3>Cristallo di Rosato</h3>
+                    <span class="price">270,00</span>
+                    <p>
+                        Um rosé que nasce da fusão entre a delicadeza do Sul e a intensidade do Nordeste. Elaborado com uvas |Pinot Noir e Granache, colhidas manualmente ao nascer do sol.
+                    </p>
+                </div>
+    
+                <div class="wine-item">
+                    <h3>Rubino della Notte</h3>
+                    <span class="price">R$ 300,00</span>
+                    <p>
+                        Um vinho tinto que nasce da ousadia: um blend de Sangrantino (85%) e Aglianico (15%), duas uvas italianas raríssimas cultivadas sob o céu estrelado do sertão sergipano. Maduro por 60 meses em barricas de carvalho francês, carvalho japonês (Mizunara) e ânforas de argila, o Rubino della Notte é uma sinfonia de contrastes. Seu aroma é uma explosão de ameixas negras, intenso, cacau 100% e trufa negra, enquanto o paladar revela taninos sedosos, acidez vibrante e um final de 30 segundos marcado por notas de grafite e baunilha selvagem.
+                    </p>
+                </div>
+    
+                <div class="wine-item">
+                    <h3>Aurora Boreale</h3>
+                    <span class="price">R$ 250,00</span>
+                    <p>
+                        Um branco que desafia o deserto: blend de Vernaccia di Sergipe (90%) e Fiano (10%), uvas italianas cultivadas em microclimas controlados por drones no sertão. Envelhecido 24 meses em barricas de castanheiro da Sardenha e 12 meses em ânforas submersas no Rio São Francisco, o Aurora Boreale brilha com aromas de damasco caramelizado, jasmim, sal mineral e um toque de fumaça vulcânica. Na boca, é cremoso, com acidez laserada e um final infinito de mel silvestre e pimenta rosa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       <!--seção de acompanhamentos */-->
+        <section class="accompaniments-section">
+            <div class="accompaniments-container">
+                <h1>Acompanhamentos</h1>
+    
+                <div class="accompaniment-item">
+                    <h3>Tartar de Salmão Selvagem</h3>
+                    <span class="price">R$ 480,00</span>
+                    <p>
+                        Salmão norueguês, wasabi negro, abacate e flor de sal rosa do Himalaia.
+                        <span class="wine-recommendation">(Cristallo di Rosato).</span>
+                    </p>
+                </div>
+    
+                <div class="accompaniment-item">
+                    <h3>Risto de Açafrão com Trufa Branca</h3>
+                    <span class="price">R$230,00</span>
+                    <p>
+                        Trufas Brancas de Alba(2g), parmesão Reggiano 48 meses.
+                        <span class="wine-recommendation">(Cristallo di Rosato).</span>
+                    </p>
+                </div>
+    
+                <div class="accompaniment-item">
+                    <h3>Carne de Cordeiro com Mel de Urucu</h3>
+                    <span class="price">R$ 285,00</span>
+                    <p>
+                        Marinada em alecrim, assado lentamente em lenha de pé de manga.
+                        <span class="wine-recommendation">(Rubino della Notte).</span>
+                    </p>
+                </div>
+    
+                <div class="accompaniment-item">
+                    <h3>Bitto Storico (50g)</h3>
+                    <span class="price">R$ 200,00</span>
+                    <p>
+                        Queijo italiano com 50 anos de cura, geleia de figo-negro.
+                        <span class="wine-recommendation">(Rubino della Notte).</span>
+                    </p>
+                </div>
+    
+                <div class="accompaniment-item">
+                    <h3>Sushi Omakase com O-toro</h3>
+                    <span class="price">R$ 350,00</span>
+                    <p>
+                        8 peças (incluindo o-toro de atum-azul, ouriço-do-mar, kinmedai).
+                        <span class="wine-recommendation">(Aurora Boreale).</span>
+                    </p>
+                </div>
+    
+                <div class="accompaniment-item">
+                    <h3>Lagosta Thermidor com Espuma Krug</h3>
+                    <span class="price">R$ 580,00</span>
+                    <p>
+                        Lagosta viva, molho de açafrão, espuma de champagne Krug Grand Cuvée.
+                        <span class="wine-recommendation">(Aurora Boreale).</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cards-section">
+            <div class="cards-container">
+                <!-- Primeiro card com imagem -->
+                <div class="card card-with-image">
+                    <img src="assets/imgs/cliente.png" alt="Albert Flores">
+                    <p>
+                        Ambiente acolhedor e amigável, com uma atmosfera descontraída e uma seleção de vinhos de qualidade, especialmente os tintos encorpados.
+                    </p>
+                    <h3>Albert Flores</h3>
+                </div>
+    
+                <!-- Segundo card com botão -->
+                <div class="card">
+                    <h2>Prove e Aprecie</h2>
+                    <p>
+                        Descubra o melhor dos vinhos com nossa seleção cuidadosamente escolhida. Não importa se você é um conhecedor ou um iniciante, nossas opções certamente encantarão seu paladar. Sinta a diferença em cada gole!
+                    </p>
+                    <a href="#" class="btn">Agende uma degustação!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Coluna 1: Links úteis -->
+            <div class="footer-column">
+                <h3>Links úteis</h3>
+                <p><a href="#">Início</a></p>
+                <p><a href="#">Serviços</a></p>
+                <p><a href="#">Produtos</a></p>
+                <p><a href="#">Política de Privacidade</a></p>
+                <p><a href="#">Ajuda</a></p>
+            </div>
+
+            <!-- Coluna 2: Sobre nós -->
+            <div class="footer-column">
+                <h3>Sobre nós</h3>
+                <p>
+                    Somos uma equipe de pessoas apaixonadas cujo objetivo é melhorar a vida de todos por meio de produtos inovadores. Criamos ótimos produtos para resolver seus problemas de negócios.
+                </p>
+                <p>
+                    Nossos produtos são projetados para empresas de pequeno e médio porte que desejam otimizar seu desempenho.
+                </p>
+            </div>
+
+            <!-- Coluna 3: Conecte-se conosco -->
+            <div class="footer-column">
+                <h3>Conecte-se conosco</h3>
+                <a href="#" class="btn">Entre em contato</a>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <p>79 90000-0000</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <p>info.suaempresa@exemplo.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
